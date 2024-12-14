@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="css/normalize_v8.css">
+  <style>
+    @import "css/inscape.css";
+  </style>
+  <script type="text/javascript" src="js/inscape.js"></script>
+  <script src="https://code.jquery.com/jquery-3.6.1.min.js"></script>
+  <title>Samples by Inscape Builders</title>
+</head>
+
+<body>
+  <div id="wrapper">
+    <div id="includedContent"></div>
+    <h2>Our Samples Projects</h2>
+    <form method="post" action="" enctype="text/plain"
+      onsubmit="handleSubmit(event)">
+      <nav id="nav_container2" class="main">
+        <article id="mainarticle">
+          <div id="article_columns">
+            <section id="col1">
+              <embed class="pdf" src="images/Samples/G.F AND F.F.pdf" width="640" height="360">
+            </section>
+            <section id="col2">
+              <video width="640" height="360" controls class='responsive_image'>
+                <source src="images/Samples/3D.mp4" type="video/mp4">
+              </video>
+             
+            </section>
+            <section id="col3">
+              <img src="images/Home/Kundradhur1.jpg" alt="Recent Finished Project" class='responsive_image' />
+            </section>
+          </div>
+            <label>Need more samples! </label>
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required><br><br>    
+            <label>Share your Email ID:</label> <input type="email" name="email" id="email">
+            <input type="submit" value="send"> <input type="reset" value="clear">
+            <label>&nbsp;</label>
+            <p id="message"></p>
+        </article>
+      </nav>
+      <footer>&copy; 2055 Ramya Nagavarapu</footer>
+  </div>
+  <script src="js/navbar.js"></script>
+  <script>
+    // JavaScript to handle form submission
+    function handleSubmit(event) {
+        event.preventDefault();  
+        const name = document.getElementById('name').value;
+        const email = document.getElementById('email').value;
+        document.getElementById('message').innerHTML = "Thank you,"+ name +"!  You will receive our samples shortly @ "+email;
+        console.log(`Name: ${name}, Email: ${email}`);
+    }
+</script>
+</body>
+
+</html>

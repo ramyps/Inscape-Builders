@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="css/normalize_v8.css">
+  <style>
+    @import "css/inscape.css";
+  </style>
+  <script type="text/javascript" src="js/inscape.js"></script>
+  <script src="https://code.jquery.com/jquery-3.6.1.min.js"></script>
+  <title>Contact Us - Inscape Builders</title>
+</head>
+
+<body>
+  <form method="post" action="" enctype="text/plain" onsubmit="handleSubmit(event)">
+    <div id="wrapper">
+      <div id="includedContent"></div>
+      <h2>Contact Us</h2>
+      <h5>We are serving around Chennai for New Constructions, Renovations and all Approvals . <br> If you are
+        interested, please mention your location and we will contact you in 48 hours. </h5>
+      <nav id="nav_container2" class="main">
+        <article id="mainarticle">
+          <div id="article_columns">
+            <div id="contactform">
+              <label for="fname">First Name:</label>
+              <input type="text" id="fname" name="fname"><br>
+              <span id="fnameError" style="color: red;"></span>
+
+              <label for="lname">Last Name:</label>
+              <input type="text" id="lname" name="lname"><br>
+              <span id="lnameError" style="color: red;"></span>
+
+              <label for="mobileno">Mobile No:</label>
+              <input type="text" id="mobileno" name="mobileno" maxlength="10"><br>
+              <span id="mobileError" style="color: red;"></span>
+
+              <label>Email ID:</label> <input type="email" name="email" id="email" class="textinput" maxlength="30">
+              <br>
+              <span id="emailError" style="color: red;"></span>
+              <label for="location">Location</label>
+              <input type="text" id="location" name="location"><br>
+              <label for="optin">Interested in :</label>
+
+              <select name="optin" id="optin">
+                <option value="newconstruction">New Construction</option>
+                <option value="renovations"> Building Renovations</option>
+                <option value="plans">3D or Building Plans</option>
+                <option value="approvals">Permits or Approvals</option>
+              </select>
+
+              <textarea id="subject" name="subject" placeholder="Write your requirements .."
+                style="height:200px"></textarea>
+              <input type="submit" value="Submit">
+              <input type="reset" value="Clear">
+              <label>&nbsp;</label>
+              <p id="message"></p>
+              <p id = 'fortune'> </p>
+
+              <h2> Our Socials </h2>
+              <a href=tel:+919677615163><img src="images/call.jpg" id="slogo" class='responsive_image' /></a>
+              <a href="//api.whatsapp.com/send?phone=+919677615163&text=We want to hire you">
+                <img src="images/WhatsApp.png" id="slogo" class='responsive_image' /></a>
+              <a href="https://www.instagram.com/inscape_builders">
+                <img src="images/insta.png" id="slogo" class='responsive_image' /></a>
+            </div>
+          </div>
+        </article>
+      </nav>
+      <footer>&copy; 2055 Ramya Nagavarapu</footer>
+    </div>
+    <script src="js/navbar.js"></script>
+    <script>
+      
+    </script>
+  </form>
+</body>
+
+</html>

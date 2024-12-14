@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="css/normalize_v8.css">
+  <style>
+    @import "css/inscape.css";
+  </style>
+  <script src="https://code.jquery.com/jquery-3.6.1.min.js"></script>
+  <title>Careers - Inscape Builders</title>
+</head>
+
+<body>
+  <form method="post" action="" enctype="text/plain" onsubmit="handleSubmit(event)">
+    <div id="wrapper">
+      <div id="includedContent"></div>
+      <h2>Careers</h2>
+      <h5>We are hiring around Chennai for Site Engineers, Plumbers, Electricians and all civil work dealers. <br>
+        If you are interested, do mention your location and upload your resume. </h5>
+      <nav id="nav_container2" class="main">
+        <article id="mainarticle">
+          <div id="article_columns">
+            <div id="contactform">
+              <label for="fname">First Name:</label>
+              <input type="text" id="fname" name="fname"><br>
+              <span id="fnameError" style="color: red;"></span>
+
+              <label for="lname">Last Name:</label>
+              <input type="text" id="lname" name="lname"><br>
+              <span id="lnameError" style="color: red;"></span>
+
+              <label for="mobileno">Mobile No:</label>
+              <input type="text" id="mobileno" name="mobileno" maxlength="10"><br>
+              <span id="mobileError" style="color: red;"></span>
+
+              <label>Email ID:</label> <input type="email" name="email" id="email" class="textinput" maxlength="30">
+              <br>
+              <span id="emailError" style="color: red;"></span> 
+              
+              <br>
+              <label for="location">Location</label>
+              <input type="text" id="location" name="location"><br>
+
+              Interested in :
+              <select name="optin" id="optin">
+                <option value="engineers">Engineers</option>
+                <option value="dealers">Dealers</option>
+                <option value="plumbers">Plumbers</option>
+                <option value="electricians"> Electricians</option>
+                <option value="plans">3D or Building Plans</option>
+                <option value="approvals">Permits or Approvals</option>
+              </select>
+              <label for="resume">Upload your resume</label>
+              <input type="file" id="resume" name="resume" value="upload resume"><br>
+              <input type="submit" value="Submit"> <input type="reset" value="Clear">
+              <p id="message"></p>
+              <p id ='fortune'> </p>
+
+              <h2> Our Socials </h2>
+              <a href=tel:+919677615163><img src="images/call.jpg" id="slogo" class='responsive_image' /></a>
+              <a href="//api.whatsapp.com/send?phone=+919677615163&text=We want to hire you"> <img
+                  src="images/WhatsApp.png" id="slogo" class='responsive_image' /></a>
+              <a href="https://www.instagram.com/inscape_builders">
+                <img src="images/insta.png" id="slogo" class='responsive_image' /></a>
+            </div>
+          </div>
+        </article>
+        <span>&nbsp;</span>
+      </nav>
+      <footer>&copy; 2055 Ramya Nagavarapu</footer>
+    </div>
+    <script src="js/navbar.js"></script>
+  
+  </form>
+</body>
+
+</html>
