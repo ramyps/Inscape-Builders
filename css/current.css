@@ -1,0 +1,16 @@
+div#imagegrid,#videogrid{ margin: 1em auto; width: 80%; height: auto;
+}
+
+img{ width: 30%; aspect-ratio: 4/5; object-fit: cover;
+margin: 3px; padding: 3px; background-color: #fff;
+border: 1px solid #0164A5;}
+video{width: 30%; aspect-ratio: 4/5; object-fit: cover;
+margin: 3px; padding: 3px; background-color: #fff;
+border: 1px solid #0164A5;}
+pre{ width: 25%; margin: 1px; padding: 1px; 
+border: 0px solid #0164A5;}
+
+div#current{
+    display: flex;
+    flex-direction: column;
+}
